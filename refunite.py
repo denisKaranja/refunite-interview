@@ -66,24 +66,16 @@ def main(filename):
 
 	sorted_values = sorted(values)
 	sorted_towns = sorted(towns)
-	#print(sorted_values[38:59])
 
-	#get frequency per town
 	frequency = collections.Counter(towns)
-	#print(frequency)
-	#print(frequency)
 
-	#sort the dictionary
 	x = 0
-	y = 1
-	#print(len(frequency), frequency)
 	[town_freq.append(frequency[key])  for key in sorted(frequency)]
 
 	town_freq = town_freq[:len(town_freq) - 1]
 
 	for value in town_freq:
 		town_values = sorted_values[x: (value + x)]
-		#print(town_values)
 		avg_values.append(get_max_avg(town_values))
 		x += value
 	
