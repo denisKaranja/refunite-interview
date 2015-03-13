@@ -94,4 +94,4 @@ def main(filename):
 
 if __name__ == "__main__":
 	#print(fibonacci(10000))
-	print(main("ebola_data_public.csv"))
+	print(main("files/ebola_data_public.csv"))
